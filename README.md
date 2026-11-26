@@ -15,3 +15,9 @@ The AI loader checks WebGPU adapter features, tries a compatible fallback if ava
 
 ## V4.2
 R_Visionary branding; topics can create new subjects without Settings. AI Lab and Resource Studio share a single model state, with direct loading in Studio, diagnostics, a smaller 2048-token context and shorter source excerpts (2,400 characters). GPU faults reset the model; other failures can be retried. Manual card creation, retry missed cards, editable draft format and AI Lab-to-Studio editing are available. Local storage key unchanged. The AI remains optional and can fail on unsupported hardware; no independent content moderation is provided.
+
+## V5 dashboard redesign
+- Reference-inspired compact sidebar, overview cards, study activity chart, topic review ring and subject cards. Charts use real local data, not demo numbers. Subject cards open the filtered Topics page.
+- Settings → Profile & appearance: optional local display name, light/dark/system theme, custom accent/sidebar colours, hover and click effects, compact/expanded navigation, subject-card palette and reduced motion. Display name is saved only in local storage and exported backups; do not publish those backups. It is not sent to the AI.
+- Copy **all six** files into the same repository root; commit and push. No build step. Same storage key and version as V4.2.
+- The V4.2 WebLLM model and Resource Studio are retained. GPU compatibility still depends on the user's browser and hardware.
